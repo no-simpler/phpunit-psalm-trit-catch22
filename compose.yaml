@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    entrypoint: [ "tail", "-f", "/dev/null" ]
